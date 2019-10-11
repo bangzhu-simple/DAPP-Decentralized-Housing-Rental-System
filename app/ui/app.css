@@ -1,0 +1,15 @@
+a.disabled {
+  color: gray;
+  pointer-events: none;
+}
+
+.line-spinner{
+  display:block;
+  border-bottom:2px solid red;
+  animation: progress 2s infinite;
+}
+
+@keyframes progress{
+  0%{width:0%}
+  100%{width:100%}
+}

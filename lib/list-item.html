@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Decentralized HouseRenting Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>填写信息</h1>
+        <div class="container">
+            <div class="row">
+                <div style="display: none;" class="alert alert-success" id="msg"></div>
+                <form class="form-horizontal col-sm-5" id="add-item-to-store">
+                    <div class="form-group">
+                        <label for="house-name" class="col-sm-2 control-label">名称</label>
+                        <input type="text" name="house-name" class="form-control" id="house-name"  required="required"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-description" class="col-sm-2 control-label">描述信息</label>
+                        <textarea class="form-control" name="house-description" rows="8" id="house-description"  required="required"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-image" class="col-sm-2 control-label">上传图片</label>
+                        <input type="file" name="house-image" class="form-control" id="house-image" required="required">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-category" class="col-sm-2 control-label">类别</label>
+                            <select class="form-control" name="house-category" id="house-category">
+                                <option>普通</option>
+                                <option>豪华</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-price" class="col-sm-2 control-label">价格</label>
+                        <input type="text" class="form-control" name="house-price" id="house-price" required="required"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-condition" class="col-sm-2 control-label">租赁时间长短</label>
+                            <select class="form-control" name="house-condition" id="house-condition">
+                                <option value="1">长期</option>
+                                <option value="2">短期</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-price" class="col-sm-2 control-label">租赁开始时间</label>
+                        <input type="datetime-local" class="form-control" name="house-time-start" id="house-time-start" required="required"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="house-price" class="col-sm-2 control-label">租赁时间天数</label>
+                            <input type="text" class="form-control" name="House-end" id="House-end" required="required"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">上架</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
